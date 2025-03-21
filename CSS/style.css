@@ -1,12 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 1px;
-    padding: 1px;
+    margin: 2px;
+    padding: 2px;
     background-color: #f4f4f4;
 }
 
 .header {
-    width: 100%;
+    width: 0%;
     background-color: #111;
     color: #fff;
     padding: 15px 0;
@@ -15,11 +15,11 @@ body {
 
 h2 {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
     background-image: url('./Imagenes/header.jpg'); /* Ruta corregida */
     width: 100%;
     color: rgb(235, 214, 214);
-    padding: 50px 50px;
+    padding: 50px;
     text-shadow: 2px 2px 4px #d6cfcf;
     border-radius: 12px;
     height: 0.15px; 
