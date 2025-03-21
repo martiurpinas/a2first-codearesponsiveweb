@@ -17,6 +17,11 @@ body {
 
 .proyectos {
     padding: 40px;
+    background: white;
+}
+
+.proyectos h2 {
+    margin-bottom: 20px;
 }
 
 .proyectos-grid {
@@ -40,21 +45,35 @@ body {
 .info {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 40px;
+    background: white;
 }
 
 .info div {
     width: 30%;
+    text-align: left;
+}
+
+.mapa iframe {
+    width: 100%;
+    border: none;
 }
 
 footer {
     background: #333;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
-footer nav a {
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-links a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
 }
