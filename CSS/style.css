@@ -13,14 +13,14 @@ body {
     margin-bottom: 15px;
 }
 
-h1 {
+h2 {
     font-size: 24px;
     margin-bottom: 15px;
     background-image: url('./Imagenes/header.jpg'); /* Ruta corregida */
     width: 100%;
-    color: rgb(179, 172, 172);
+    color: rgb(235, 214, 214);
     padding: 50px 50px;
-    text-shadow: 2px 2px 4px #ddd0d0;
-    border-radius: 8px;
-    height: 12px; 
+    text-shadow: 2px 2px 4px #d6cfcf;
+    border-radius: 12px;
+    height: 0.15px; 
 }
