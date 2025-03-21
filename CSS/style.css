@@ -1,26 +1,60 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 2px;
-    padding: 2px;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.header {
-    width: 0%;
-    background-color: #111;
-    color: #fff;
-    padding: 15px 0;
-    margin-bottom: 15px;
-}
-
-h2 {
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
     font-size: 24px;
-    margin-bottom: 24px;
-    background-image: url('./Imagenes/header.jpg'); /* Ruta corregida */
-    width: 100%;
-    color: rgb(235, 214, 214);
-    padding: 50px;
-    text-shadow: 2px 2px 4px #d6cfcf;
-    border-radius: 12px;
-    height: 0.15px; 
+}
+
+.proyectos {
+    padding: 40px;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.proyectos-grid img {
+    width: 100px;
+    height: 100px;
+}
+
+.feedback {
+    background: #4e9caf;
+    color: white;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.info div {
+    width: 30%;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
