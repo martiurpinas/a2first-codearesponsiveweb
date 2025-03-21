@@ -1,122 +1,26 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-}
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+    font-family: 'Arial', sans-serif;
+    margin: 1px;
+    padding: 1px;
+    background-color: #f4f4f4;
 }
 
-.column-2 {
-    width: 50%;
-    float: left;
+.header {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 15px 0;
+    margin-bottom: 15px;
 }
 
-.column-3 {
-    width: 25%;
-    float: left;
-}
-
-.column-4 {
-    width: 33.33%;
-    float: left;
-}
-/*Clases auxiliares*/
-
-.yellow {
-    background-color: yellow;
-    padding: 50px;
-}
-.green {
-    background-color: rgb(90, 125, 90);
-    padding: 50px;
-}
-.gray {
-    background-color: gray;
-    padding: 50px;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width:600px) {
-    .column-2 {
-        width: 100%;
-    }
-    .column-3 {
-        width: 50%;
-    }
-    .column-4 {
-        width: 100%;
-    }
-}
-
-.contenedor{
-    height:75px;
-    background:blue;
-   
-    /* */
-    display:flex; 
-
-    /* DIRECCIÓN
-    Ordena las cajas horizontalmente: row, row-reverse
-    o verticalmente: column, column-reverse */
-    flex-direction: row;
-                
-    /* JUSTIFICACIÓN DE CONTENIDO
-    Distribuye el contenido de las cajas dentro del
-    contenedor horizontalmente: start, center, end, baseline
-    space-between, space-around, space-evenly */
-    justify-content: start; 
-
-    /*DESBORDAMIENTO: 
-    Evita o permite el desbordamiento al llegar al final de línea
-    si las cajas ocupan más de una línea para que sigan en la
-    siguiente: nowrap, wrap, wrap-reverse. Por defecto (nowrap)
-    todos los elementos están en una linea aunque rebase al contenedor  */
-    flex-wrap: wrap;
-
-    /* ALINEACIÓN DE CONTENIDO
-    Distribuye el contenido de las cajas dentro del
-    contenedor verticalmente: start, center, end, 
-    baseline (alinea los elementos en base al texto y no la caja),
-    stretch (alarga la caja hasta el extremo inferior) */
-    align-items: start;
-
-    /* Se usa para alinear los ítems actuando sobre el eje primario 
-    sólo cuando se está en MODO MULTILINEA */
-    align-content: center;
-}
-.item{
-
-    display: flex;
-
-    /* ALINEACIÓN INDIVIDUAL (SE APLICA A CAJA, NO AL CONTENEDOR)
-    Distribuye el contenido de las cajas dentro del
-    contenedor verticalmente: start, center, end, baseline,
-    stretch (alarga la caja hasta el extremo inferior) */            
-    align-self: start;
-
-    background:cyan;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    width:50px;
-}
-.itemEspecial{
-    /* Orden caja (SE APLICA A CAJA, NO AL CONTENEDOR)
-    Indica el orden de la caja sin tener en cuenta el orden
-    de aparición */
-    order: 2;
-    /* Tamaño caja (SE APLICA A CAJA, NO AL CONTENEDOR)
-    Indica el tamaño de en proporción a las demás para rellenar
-    todo el ancho del objeto contenedor. Si no se aplica a alguna
-    de las cajas, esta ocupará el espacio del contenido de la misma */
-    flex-grow:2;
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    background-image: url('./Imagenes/header.jpg'); /* Ruta corregida */
+    width: 100%;
+    color: rgb(179, 172, 172);
+    padding: 50px 50px;
+    text-shadow: 2px 2px 4px #ddd0d0;
+    border-radius: 8px;
+    height: 12px; 
 }
