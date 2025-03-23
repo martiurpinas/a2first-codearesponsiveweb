@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -14,37 +13,23 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url('./Imagenes/header.png');
+    background: url('../Imagenes/header.jpg'); /*  la imagen del teclado  */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Añadido para asegurar que el contenido esté sobre la imagen */
-    position: relative;
-    z-index: 0;
-}
-
-/* Añadido un pseudo-elemento para el fondo blanco */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
-    z-index: -1; /* Detrás del contenido */
 }
 
 .hero h1 {
     font-size: 50px;
     margin-bottom: 10px;
-    color: #888; /* Gris */
+    color: black; /* Color negro */
+    font-weight: normal;
 }
 
 .hero p {
     font-size: 22px;
-    font-weight: 500;
-    color: #999; /* Gris claro */
+    font-weight: normal;
+    color: black; /* Color negro */
 }
 
 .proyectos {
