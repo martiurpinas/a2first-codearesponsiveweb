@@ -22,14 +22,14 @@ body {
 .hero h1 {
     font-size: 50px;
     margin-bottom: 10px;
-    color: #888;
+    color: #3a3939;
     font-weight: normal;
 }
 
 .hero p {
     font-size: 22px;
     font-weight: normal;
-    color: #999;
+    color: #3f3e3e;
 }
 
 .proyectos {
