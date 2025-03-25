@@ -55,7 +55,6 @@ body {
     height: 120px;
 }
 
-/* Sección Feedback */
 .feedback {
     background: #4e9caf;
     color: white;
@@ -64,20 +63,28 @@ body {
     font-weight: bold;
 }
 
-/* Sección Info */
-.info {
+/* Contenedor para info y mapa */
+.info-container {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para apilar verticalmente */
-    padding: 60px 20px;
-    background: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 60px 20px;
+    background: white;
+}
+
+/* Sección de información */
+.info {
+    flex: 1;
+    max-width: 65%;
+    text-align: left;
 }
 
 .sobre-proyecto {
-    width: 100%; /* Ancho completo */
-    text-align: left;
-    margin-bottom: 20px; /* Espacio entre la sección "Sobre el proyecto" y "Preguntas frecuentes" */
+    width: 100%;
+    margin-bottom: 20px; 
 }
 
 .sobre-proyecto h2 {
@@ -93,8 +100,7 @@ body {
 }
 
 .faq {
-    width: 100%; /* Ancho completo */
-    text-align: left;
+    width: 100%; 
 }
 
 .faq h2 {
@@ -114,9 +120,10 @@ body {
     color: #666;
 }
 
-/* Mapa */
+/* Sección del mapa a la derecha */
 .mapa {
-    width: 45%;
+    width: 30%;
+    margin-left: auto;
 }
 
 .mapa iframe {
@@ -125,7 +132,6 @@ body {
     border: none;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: white;
