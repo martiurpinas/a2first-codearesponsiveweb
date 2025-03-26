@@ -22,14 +22,14 @@ body {
 .hero h1 {
     font-size: 50px;
     margin-bottom: 10px;
-    color: #3a3939;
+    color: #1d1c1c;
     font-weight: normal;
 }
 
 .hero p {
     font-size: 22px;
     font-weight: normal;
-    color: #3f3e3e;
+    color: #2b2a2a;
 }
 
 .proyectos {
@@ -119,4 +119,65 @@ footer {
 footer p {
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* Diseño para pantallas grandes (PC) */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .proyectos img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Diseño para tablets */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .proyectos img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Diseño para móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .proyectos img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Diseño para móviles pequeños */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .proyectos img {
+        width: 80px;
+        height: 80px;
+    }
 }
