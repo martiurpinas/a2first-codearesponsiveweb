@@ -177,6 +177,44 @@ footer p {
         border-radius: 10px;
     }
 
+    .h1-hero-content {
+        font-size: 2.5rem;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .container2, .container3 {
+        flex-direction: column;
+    }
+
+    .container2 img, .container3 img {
+        width: 300px;
+        padding-left: 0;
+    }
+
+    .container2 h1, .container3 h1 {
+        font-size: 1.5rem;
+    }
+
+    .image, .image02 {
+        float: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .text {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -186,35 +224,42 @@ footer p {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .h1-hero-content {
-        font-size: 2.5rem;
+/* Mobile Screens */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
     }
-    .text h1 {
-        font-size: 2rem;
-    }
-    .container2, .container3 {
+
+    .proyectos {
         flex-direction: column;
+        align-items: center;
     }
-    .container2 img, .container3 img {
-        width: 300px;
-        padding-left: 0;
+
+    .proyectos img {
+        width: 80px;
+        height: 80px;
     }
-    .container2 h1, .container3 h1 {
-        font-size: 1.5rem;
+
+    .contenido-mapa {
+        flex-direction: column-reverse; /* Move map above text */
+        align-items: center;
+        gap: 15px;
+        max-width: 100%;
     }
-    .image, .image02 {
-        float: none;
-        padding-right: 0;
-        padding-left: 0;
+
+    .contenido-mapa p, .contenido-mapa iframe {
+        max-width: 100%;
     }
-    .text {
-        padding-right: 0;
-        padding-left: 0;
+
+    .contenido-mapa p {
+        flex: 1;
+        text-align: left;
+        font-size: 14px;
     }
-    .footer-links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+
+    .contenido-mapa iframe {
+        flex: 1;
+        height: 200px;
+        border-radius: 10px;
     }
-  }
+}
