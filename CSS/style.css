@@ -1,3 +1,4 @@
+/* General Styles */
 body { 
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -13,10 +14,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url('../Imagenes/header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../Imagenes/header.jpg') no-repeat center center / cover;
 }
 
 .hero h1 {
@@ -53,6 +51,12 @@ body {
 .proyectos-grid img {
     width: 120px;
     height: 120px;
+    border-radius: 10px; /* Mejora estética */
+    transition: transform 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.proyectos-grid img:hover {
+    transform: scale(1.1); /* Efecto de zoom */
 }
 
 .feedback {
@@ -61,6 +65,7 @@ body {
     padding: 40px 20px;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .info-container {
@@ -84,7 +89,6 @@ body {
     display: flex;
     justify-content: flex-end; 
     margin-left: auto; 
-    margin-right: -32rem; 
     align-items: flex-start; 
 }
 
@@ -93,6 +97,7 @@ body {
     height: 285px;
     border: none;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
 
 footer {
@@ -114,6 +119,11 @@ footer {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4e9caf; /* Color de hover */
 }
 
 footer p {
@@ -121,31 +131,9 @@ footer p {
     font-size: 14px;
 }
 
-/* Diseño para pantallas grandes (PC) */
-@media screen and (min-width: 1024px) {
-    body {
-        font-size: 18px;
-    }
+/* Responsive Design */
 
-    .proyectos img {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-/* Diseño para tablets */
-@media screen and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
-
-    .proyectos img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-/* Diseño para móviles */
+/* Tablets and Medium Screens */
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -164,20 +152,76 @@ footer p {
         margin: 10px;
     }
 
+    .contenido-mapa {
+        flex-direction: column-reverse; /* Move map above text */
+        align-items: center; /* Center align elements */
+        gap: 20px; /* Adjust spacing */
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .contenido-mapa p, .contenido-mapa iframe {
+        max-width: 100%; /* Full width for both elements */
+    }
+
+    .contenido-mapa p {
+        flex: 1;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .contenido-mapa iframe {
+        flex: 1;
+        height: 250px;
+        border-radius: 10px;
+    }
+
     .footer {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 15px;
     }
 }
 
-/* Diseño para móviles pequeños */
+/* Mobile Screens */
 @media screen and (max-width: 480px) {
     body {
         font-size: 12px;
     }
 
+    .proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .proyectos img {
         width: 80px;
         height: 80px;
+    }
+
+    .contenido-mapa {
+        flex-direction: column-reverse; /* Move map above text */
+        align-items: center; /* Center align elements */
+        gap: 15px; /* Adjust spacing */
+        max-width: 100%; /* Ensure full width */
+    }
+
+    .contenido-mapa p, .contenido-mapa iframe {
+        max-width: 100%; /* Full width for both elements */
+    }
+
+    .contenido-mapa p {
+        flex: 1;
+        text-align: left; /* Alinea el texto a la izquierda */
+        font-size: 14px;
+    }
+
+    .contenido-mapa iframe {
+        flex: 1;
+        height: 200px;
+        border-radius: 10px;
     }
 }
